@@ -100,19 +100,13 @@ body {
     line-height: 1.6;
 }
 
-/* ボタン */
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
+/* ボタン共通 */
 .prev-btn,
 .next-btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
-    color: white;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -121,4 +115,20 @@ body {
 .prev-btn:hover,
 .next-btn:hover {
     background-color: #0056b3;
+}
+
+/* ボタン配置用 */
+.navigation {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* 前へボタンは左 */
+.prev-btn {
+    margin-right: auto;
+}
+
+/* 次へボタンは右 */
+.next-btn {
+    margin-left: auto;
 }
