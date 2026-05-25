@@ -122,16 +122,17 @@ body {
 .navigation {
     display: flex;
     margin-top: 20px;
+    
 }
 
 /* 前へボタンは左 */
 .prev-btn {
-    margin-right: auto;
+    margin: 10px 180px 10px 0px;
 }
 
 /* 次へボタンは右 */
 .next-btn {
-    margin-left: auto;
+    margin: 10px 5px 10px 120px;
 }
 
 button {
