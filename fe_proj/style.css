@@ -100,19 +100,7 @@ body {
     line-height: 1.6;
 }
 
-<<<<<<< HEAD
 /* ボタン共通 */
-=======
-<<<<<<< HEAD
-=======
-/* ボタン */
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
->>>>>>> branch 'main' of https://github.com/cac-it-training-2026/fe-presentation-a04.git
 .prev-btn,
 .next-btn {
     display: inline-block;
@@ -128,7 +116,6 @@ body {
 .next-btn:hover {
     background-color: #0056b3;
 }
-<<<<<<< HEAD
 
 /* ボタン配置用 */
 .navigation {
@@ -145,6 +132,3 @@ body {
 .next-btn {
     margin-left: auto;
 }
-=======
->>>>>>> branch 'main' of https://github.com/cac-it-training-2026/fe-presentation-a04.git
->>>>>>> branch 'main' of https://github.com/cac-it-training-2026/fe-presentation-a04.git
