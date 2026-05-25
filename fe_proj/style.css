@@ -127,12 +127,12 @@ body {
 
 /* 前へボタンは左 */
 .prev-btn {
-    margin: 10px 180px 10px 0px;
+    margin: auto;
 }
 
 /* 次へボタンは右 */
 .next-btn {
-    margin: 10px 5px 10px 120px;
+    margin: auto;
 }
 
 button {
@@ -147,6 +147,8 @@ button {
       text-align: left;
       transition: 0.3s;
       font-size: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+
     }
     
     button:hover {
