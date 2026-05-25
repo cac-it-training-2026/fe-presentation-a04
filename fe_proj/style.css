@@ -60,12 +60,6 @@ body {
     transform: scale(1.2); /* 少し大きくして押しやすく */
 }
 
-.quiz-option {
-    background-color: #fcfcfc;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    overflow: hidden;
-
 
 /* 解答・解説の開閉部分 */
 .quiz-answer {
