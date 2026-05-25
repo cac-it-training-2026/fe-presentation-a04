@@ -9,21 +9,21 @@
         <div class="quiz-container">
             <h3 class="quiz-question">問題2: 結合テストの目的として最も適切なものはどれか。</h3>
 
-    <button=quiz-option type="button" onclick="checkAnswer(1)">
+    <button class="quiz-option"  type="button" onclick="checkAnswer(1)">
       システム全体の操作性を確認する
     </button>
 
-    <button=quiz-option type="button" onclick="checkAnswer(2)">
+    <button class="quiz-option"  type="button" onclick="checkAnswer(2)">
       部品同士を連携した際のデータ受け渡しの不具合を見つける
-    </button=quiz-option>
+    </button>
 
-    <button=quiz-option type="button" onclick="checkAnswer(3)">
+    <button class="quiz-option"  type="button" onclick="checkAnswer(3)">
       画面デザインの見やすさを確認する
-    </button=quiz-option>
+    </button>
 
-    <button=quiz-option type="button" onclick="checkAnswer(4)">
+    <button class="quiz-option"  type="button" onclick="checkAnswer(4)">
       利用者マニュアルの内容を確認する
-    </button=quiz-option>
+    </button>
 
     <p id="result"></p>
 
@@ -57,15 +57,20 @@
 
       const result = document.getElementById("result");
 
-       boxes.forEach(function(box) {
-        box.style.display = "none";
-    });
+      if(answer === 2) {
 
-    // 押されたものだけ表示
-    const answer = document.getElementById(id);
+        result.textContent = "⭕ 正解！";
+        result.style.color = "green";
 
-    answer.style.display = "block";
+    } else {
+
+        result.textContent = "❌ 不正解";
+        result.style.color = "red";
+
+    }
+
 }
+
 
   </script>
     </body>
