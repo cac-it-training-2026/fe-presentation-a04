@@ -31,7 +31,7 @@ body {
 
 /* 選択肢のレイアウト */
 .quiz-options {
-    display: flex;
+    display: block;
     flex-direction: column;
     gap: 12px; /* 選択肢同士の隙間 */
     margin-bottom: 24px;
@@ -59,6 +59,7 @@ body {
     margin-right: 10px;
     transform: scale(1.2); /* 少し大きくして押しやすく */
 }
+
 
 /* 解答・解説の開閉部分 */
 .quiz-answer {
@@ -99,3 +100,67 @@ body {
     margin-bottom: 0;
     line-height: 1.6;
 }
+
+/* ボタン共通 */
+.prev-btn,
+.next-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #0056b3;
+}
+
+/* ボタン配置用 */
+.navigation {
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+/* 前へボタンは左 */
+.prev-btn {
+    margin: auto;
+}
+
+/* 次へボタンは右 */
+.next-btn {
+    margin: auto;
+}
+
+button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #ecf0f1;
+      cursor: pointer;
+      text-align: left;
+      transition: 0.3s;
+      font-size: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+
+    }
+    
+    button:hover {
+      background-color: #3498db;
+      color: white;
+    }
+
+ .answer-box {
+      display: none;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+    }
