@@ -6,37 +6,26 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-         <button class="choice" onclick="checkAnswer(1)">
-    システム全体の操作性を確認する
-  </button>
+        <div class="quiz-container">
+            <h3 class="quiz-question">問題2: 結合テストの目的として最も適切なものはどれか。</h3>
 
-  <button class="choice" onclick="checkAnswer(2)">
-    部品同士を連携した際のデータ受け渡しの不具合を見つける
-  </button>
-
-  <button class="choice" onclick="checkAnswer(3)">
-    画面デザインの見やすさを確認する
-  </button>
-
-  <button class="choice" onclick="checkAnswer(4)">
-    利用者マニュアルの内容を確認する
-  </button>
-
-  <p id="result"></p>
-
-  <script>
-    function checkAnswer(answer) {
-
-      const result = document.getElementById("result");
-
-      if(answer === 2) {
-        result.textContent = "正解！";
-      } else {
-        result.textContent = "不正解...";
-      }
-
-    }
-  </script>
+            <form class="quiz-options">
+                <label>
+                    <input type="radio" name="q1" value="1"/> 1. システム全体の操作性を確認する
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="2" /> 2. 部品同士を連携した際のデータ受け渡しの不具合を見つける
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="3" /> 3. 画面デザインの見やすさを確認する
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="4" /> 4. 利用者マニュアルの内容を確認する
+                </label>
+                  <div class="navigation">
+    				<a href="question01.html" class="prev-btn">← 前へ</a>
+    				<a href="question03.html" class="next-btn">次へ →</a>
+				</div>
             </form>
 
             <details class="quiz-answer">
