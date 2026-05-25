@@ -9,23 +9,24 @@
         <div class="quiz-container">
             <h3 class="quiz-question">問題1: 単体テストの説明として、最も適切なものはどれか。</h3>
 
-            <form class="quiz-options">
-                <label>
-                    <input type="radio" name="q1" value="1" /> 1. システム全体を対象に、本番環境に近い条件で動作を確認するテストである。
-                </label>
-                <label>
-                    <input type="radio" name="q1" value="2" /> 2. 利用者の要求を満たしているかを確認するため、実際の業務担当者が実施するテストである。
-                </label>
-                <label>
-                    <input type="radio" name="q1" value="3" /> 3. 1つの機能や部品ごとに動作確認を行うテストである。
-                </label>
-                <label>
-                    <input type="radio" name="q1" value="4" /> 4. システム運用中に発生した障害の原因を分析し、再発防止策を検討する活動である。
-                </label>
-               <div class="navigation">
-    			   <a href="question02.html" class="next-btn">次へ →</a>
-			   </div>
-            </form>
+    		<button class="quiz-option"  type="button" onclick="checkAnswer(1)">
+				 1. システム全体を対象に、本番環境に近い条件で動作を確認するテストである。
+            </button>
+
+    		<button class="quiz-option"  type="button" onclick="checkAnswer(2)">
+		 		 2. 利用者の要求を満たしているかを確認するため、実際の業務担当者が実施するテストである。
+    		</button>
+
+    		<button class="quiz-option"  type="button" onclick="checkAnswer(3)">
+				 3. 1つの機能や部品ごとに動作確認を行うテストである。
+    		</button>
+
+    		<button class="quiz-option"  type="button" onclick="checkAnswer(4)">
+				 4. システム運用中に発生した障害の原因を分析し、再発防止策を検討する活動である。
+            </button>
+
+    		<p id="result"></p>
+
 
             <details class="quiz-answer">
                 <summary>解答と解説を見る</summary>
@@ -39,6 +40,32 @@
                     </p>
                 </div>
             </details>
+               <div class="navigation">
+				   <a href="question00.html" class="prev-btn">← 前へ</a>
+    			   <a href="question02.html" class="next-btn">次へ →</a>
+			   </div>
         </div>
+          <script>
+
+    function checkAnswer(answer) {
+
+      const result = document.getElementById("result");
+
+      if(answer === 3) {
+
+        result.textContent = "⭕ 正解！";
+        result.style.color = "green";
+
+    } else {
+
+        result.textContent = "❌ 不正解";
+        result.style.color = "red";
+
+    }
+
+}
+
+
+  </script>
     </body>
 </html>
