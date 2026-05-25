@@ -9,43 +9,27 @@
         <div class="quiz-container">
             <h3 class="quiz-question">問題2: 結合テストの目的として最も適切なものはどれか。</h3>
 
-           <button type="button" onclick="checkAnswer(1)">
+    <button=quiz-option type="button" onclick="checkAnswer(1)">
       システム全体の操作性を確認する
     </button>
 
-    <button type="button" onclick="checkAnswer(2)">
+    <button=quiz-option type="button" onclick="checkAnswer(2)">
       部品同士を連携した際のデータ受け渡しの不具合を見つける
-    </button>
+    </button=quiz-option>
 
-    <button type="button" onclick="checkAnswer(3)">
+    <button=quiz-option type="button" onclick="checkAnswer(3)">
       画面デザインの見やすさを確認する
-    </button>
+    </button=quiz-option>
 
-    <button type="button" onclick="checkAnswer(4)">
+    <button=quiz-option type="button" onclick="checkAnswer(4)">
       利用者マニュアルの内容を確認する
-    </button>
+    </button=quiz-option>
 
     <p id="result"></p>
 
-  </div>
 
-  <script>
 
-    function checkAnswer(answer) {
-
-      const result = document.getElementById("result");
-
-      if(answer === 2) {
-        result.textContent = "⭕ 正解！";
-        result.style.color = "green";
-      } else {
-        result.textContent = "❌ 不正解";
-        result.style.color = "red";
-      }
-
-    }
-
-  </script>
+ 
 
             <details class="quiz-answer">
                 <summary>解答と解説を見る</summary>
@@ -61,11 +45,28 @@
                     </p>
                 </div>
             </details>
-        </div>
          <div class="navigation">
-			 　　　<a href="question02.html" class="prev-btn">← 前へ</a>
-    			   <a href="question02.html" class="next-btn">次へ →</a>
+			 　　　<a href="question01.html" class="prev-btn">← 前へ</a>
+    			   <a href="question03.html" class="next-btn">次へ →</a>
     			   
 			   </div>
+			   </div>
+			    <script>
+
+    function checkAnswer(answer) {
+
+      const result = document.getElementById("result");
+
+       boxes.forEach(function(box) {
+        box.style.display = "none";
+    });
+
+    // 押されたものだけ表示
+    const answer = document.getElementById(id);
+
+    answer.style.display = "block";
+}
+
+  </script>
     </body>
 </html>
